@@ -1,3 +1,11 @@
+<?php
+    $key = $_GET["key"];
+    if (empty($key) || !isset($key)) {
+        header("Location: index.php");
+        exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +14,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/x-icon" />
-    <title>cherryh4ck</title>
+    <title>sent!!1</title>
 </head>
 <body>
     <nav>
@@ -51,23 +59,15 @@
         </script>
     </nav>
     <header>
-        <p style="font-style: italic;">
-            welcome home, traveler.
+        <p style="font-style: italic; text-align: center;">
+            your message has been sent.
+            <br>
+            your key is <b><?php echo $_GET["key"]; ?></b>.
             <br><br>
-            you are now free to rest.
+            use this key to view if i replied to your message.
         </p>
-        <p>
-            this site is still wip. expect nothing though (╥﹏╥).
-            <br><br><br>
-            feel free to leave me a message below:
-        </p>
-        <form action="php/sendMessage.php" method="post">
-            <input type="text" name="name" placeholder="your name" required>
-            <br><br>
-            <textarea name="message" placeholder="your message" required></textarea>
-            <br><br>
-            <input type="submit" value="send">
-        </form>
+        <p style="text-align: center;">thanks!! >ᴗ<</p>
+        <button id="button" onclick="window.location.href='index.php'">go back ദ്ദി◝ ⩊ ◜.ᐟ</button>
     </header>
 </body>
 </html>

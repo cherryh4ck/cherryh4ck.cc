@@ -65,7 +65,55 @@ header {
     width: 50%;
 }
 
+#button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 p {
     font: 13px / 1.4 'Helvetica Neue', sans-serif;
     color: #E0D0D0;
+}
+
+#green-text {
+    font-style: italic;
+    color: #71ef71;
+    text-shadow: 2px 2px 0px #1b4c1b;
+}
+
+#whisper {
+    font-style: italic;
+    color: #dc4bdb;
+    text-shadow: 2px 2px 0px #3F003F;
+}
+
+#no-reply {
+    font-style: italic;
+    color: #cc543e;
+    text-shadow: 2px 2px 0px #471d16;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.projects img {
+    display: block;
+    width: 49px;
+}
+
+.other-projects{
+    text-align: center;
+}
+
+.other-projects a {
+    text-decoration: none;
+}
+
+.other-projects p{
+    text-shadow: 2px 2px 0px #501231;
 }
